@@ -1,0 +1,57 @@
+/*
+ * Copyright (c) 2026 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+// Key geometry taken from docs/images/TOTEM_layout.svg; the right half mirrors the left.
+
+#include <physical_layouts.dtsi>
+
+/ {
+    totem_layout: totem_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "TOTEM";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs  97  92   93  163 (-1000)  142  209>
+            , <&key_physical_attrs  97  92  206   77  (-400)  254  122>
+            , <&key_physical_attrs  97  92  320   20       0  369   66>
+            , <&key_physical_attrs  97  92  420   67       0  469  113>
+            , <&key_physical_attrs  97  92  520   82       0  569  128>
+            , <&key_physical_attrs  97  92  841   82       0  889  128>
+            , <&key_physical_attrs  97  92  941   67       0  989  113>
+            , <&key_physical_attrs  97  92 1041   20       0 1089   66>
+            , <&key_physical_attrs  97  92 1155   77     400 1204  122>
+            , <&key_physical_attrs  97  92 1267  163    1000 1316  209>
+            , <&key_physical_attrs  97  92  110  256 (-1000)  158  302>
+            , <&key_physical_attrs  97  92  212  171  (-400)  261  217>
+            , <&key_physical_attrs  97  92  320  114       0  369  160>
+            , <&key_physical_attrs  97  92  420  162       0  469  207>
+            , <&key_physical_attrs  97  92  520  176       0  569  222>
+            , <&key_physical_attrs  97  92  841  176       0  889  222>
+            , <&key_physical_attrs  97  92  941  162       0  989  207>
+            , <&key_physical_attrs  97  92 1041  114       0 1089  160>
+            , <&key_physical_attrs  97  92 1148  171     400 1197  217>
+            , <&key_physical_attrs  97  92 1251  256    1000 1300  302>
+            , <&key_physical_attrs  97  92   20  325 (-1000)   69  371>
+            , <&key_physical_attrs  97  92  126  349 (-1000)  175  395>
+            , <&key_physical_attrs  97  92  219  265  (-400)  267  311>
+            , <&key_physical_attrs  97  92  320  209       0  369  255>
+            , <&key_physical_attrs  97  92  420  256       0  469  302>
+            , <&key_physical_attrs  97  92  520  271       0  569  317>
+            , <&key_physical_attrs  97  92  841  271       0  889  317>
+            , <&key_physical_attrs  97  92  941  256       0  989  302>
+            , <&key_physical_attrs  97  92 1041  209       0 1089  255>
+            , <&key_physical_attrs  97  92 1142  265     400 1191  311>
+            , <&key_physical_attrs  97  92 1235  349    1000 1283  395>
+            , <&key_physical_attrs  97  92 1341  325    1000 1389  371>
+            , <&key_physical_attrs  97  92  392  371       0  441  417>
+            , <&key_physical_attrs  97  92  503  386    1500  552  432>
+            , <&key_physical_attrs  97  92  605  429    3000  654  474>
+            , <&key_physical_attrs  97  92  755  429 (-3000)  804  474>
+            , <&key_physical_attrs  97  92  858  386 (-1500)  907  432>
+            , <&key_physical_attrs  97  92  969  371       0 1017  417>
+            ;
+    };
+};
